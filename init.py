@@ -3,6 +3,7 @@ import platform
 import os
 if (platform.system() == 'Windows'):
     LOCAL_DATA_PATH = 'C:\\Users\\jimmy\\Documents\\GitHub'  # backslashes are escape characters, so doubles are needed
+    currentDIR = os.getcwd()
     # experiment_param_filePath = '.\\data\\test_repo_list.txt'
     # PR_pairList_filePath_prefix = '.\\data\\consecutive_PR_pairs_'
     # repos = [line.rstrip('\n') for line in open(".\\data\\test_repo_list.txt")]
