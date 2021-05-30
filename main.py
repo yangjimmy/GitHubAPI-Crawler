@@ -20,8 +20,8 @@ if __name__ == "__main__":
 
     f = open("repositories_python.txt", "w")
     f2 = open("repositories_notebook.txt", "w")
-    start_date = datetime.datetime(2020, 1, 1)
-    day_count = 7
+    start_date = datetime.datetime(2016, 1, 1)
+    day_count = 365
     for single_date in (start_date + datetime.timedelta(n) for n in range(day_count)):
         day = single_date.strftime('%Y-%m-%d')
         # python projects
